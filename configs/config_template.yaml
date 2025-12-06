@@ -1,4 +1,4 @@
 env: local
 logger:
-  level: local
+  level: debug
   show_path_call: false

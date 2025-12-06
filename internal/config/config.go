@@ -9,7 +9,7 @@ import (
 )
 
 type Config struct {
-	Env    string `yaml:"env" env-default:"local"`
+	Env    string `yaml:"env"`
 	Logger struct {
 		Level        *slog.Level `yaml:"level"`
 		ShowPathCall bool        `yaml:"show_path_call" env-default:"false"`
@@ -43,7 +43,7 @@ func fetchConfigPath() (res string) {
 		res = os.Getenv("CONFIG_PATH")
 	}
 	if res == "" {
-		res = "config/config_local.yaml"
+		res = "configs/config_local.yaml"
 	}
 	return
 }

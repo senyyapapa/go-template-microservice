@@ -1,4 +1,4 @@
-package template
+package main
 
 import (
 	"github.com/lmittmann/tint"
