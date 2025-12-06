@@ -1,0 +1,4 @@
+env: local
+logger:
+  level: local
+  show_path_call: false
